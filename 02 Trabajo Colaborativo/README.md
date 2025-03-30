@@ -8,7 +8,6 @@ Este repositorio contiene el **Trabajo Práctico de la unidad 2**, en el cual se
 - Joana Gamarra
 - Rosario, Santa Fe
 - Comisión 14
-- [@Joygamarra09](https://gist.github.com/Joygamarra09e)
 
 
 ## Documentación
