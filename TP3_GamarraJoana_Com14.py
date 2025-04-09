@@ -1,3 +1,5 @@
+#ALUMNA: GAMARRA JOANA
+
 #1)
 
 #Asignamos un valor a la variable
