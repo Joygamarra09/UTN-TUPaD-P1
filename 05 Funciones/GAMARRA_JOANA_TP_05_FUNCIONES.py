@@ -40,7 +40,7 @@ informacion_personal(nombre, apellido, edad, residencia)
 import math
 
 def calcular_area_circulo(radio):
-    return math.pi * (radio * radio)
+    return math.pi * (radio ** 2)
     
 
 def calcular_perimetro_circulo(radio):
@@ -143,12 +143,12 @@ def celsius_a_fahrenheit(celsius):
 
 #Programa principal.
 #Se define la variable a través de un input.
-celsius = int(input("Por favor, ingrese la temperatura en Celsius: "))
+celsius = int(input("Por favor, ingrese la temperatura en ℃: "))
 
 fahrenheit = celsius_a_fahrenheit(celsius)
 
 #Mostramos los grados en fahrenheit.
-print(f"El equivalente en fahrenheit de los grados ingresados es: {fahrenheit}")
+print(f"El equivalente en fahrenheit de los grados ingresados es: {fahrenheit} ℉")
 
 #10)
 
