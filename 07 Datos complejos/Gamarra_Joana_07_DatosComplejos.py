@@ -155,3 +155,48 @@ if numero < 0 or digito < 0 or digito > 9:
 else:
     total = contar_digito(numero, digito)
     print(f"El dígito {digito} aparece {total} veces en {numero}.")
+
+"""EJERCICIO 9"""
+
+# Crear la agenda como diccionario
+agenda = {}
+
+# Cargar eventos
+print("Cargá eventos en la agenda.")
+for i in range(3):  # Podés cambiar el 3 por más eventos si querés
+    dia = input(f"Ingresá el día del evento {i + 1} (por ejemplo: 'Lunes'): ")
+    hora = input("Ingresá la hora (por ejemplo: '14:00'): ")
+    evento = input("Descripción del evento: ")
+
+    clave = (dia.lower(), hora)
+    agenda[clave] = evento
+
+# Consultar un evento
+print(" Consultar actividad en un día y hora específicos.")
+consulta_dia = input("Ingresá el día que querés consultar: ").lower()
+consulta_hora = input("Ingresá la hora (por ejemplo: '14:00'): ")
+
+clave_consulta = (consulta_dia, consulta_hora)
+
+if clave_consulta in agenda:
+    print(f" Hay un evento el {consulta_dia.capitalize()} a las {consulta_hora}: {agenda[clave_consulta]}")
+else:
+    print(f" No hay ningún evento registrado el {consulta_dia.capitalize()} a las {consulta_hora}.")
+
+
+"""EJERCICIO 10"""
+
+# Diccionario original: país -> capital
+paises_capitales = {
+    "Argentina": "Buenos Aires",
+    "Brasil": "Brasilia",
+    "Chile": "Santiago",
+    "Uruguay": "Montevideo"
+}
+
+# Invertir el diccionario: capital -> país
+capitales_paises = {capital: pais for pais, capital in paises_capitales.items()}
+
+# Mostrar el resultado
+print(capitales_paises)
+
